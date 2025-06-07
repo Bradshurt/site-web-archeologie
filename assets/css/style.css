@@ -4,7 +4,8 @@ body {
     top: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;margin: 0;
+    flex-direction: column;
+    margin: 0;
 }
 
                                         /* ==============header style============= */
@@ -14,6 +15,8 @@ header {
     display: flex;
     flex-direction: column;
     background-color: black;
+    position: relative;
+    z-index: 10;
 }
 /* =================option contrainer style================= */
 .option-contrainer {
@@ -45,12 +48,12 @@ header {
   border: none;
 }
 
-#mode-icon {
-  width: 30px; 
-  height: 30px;
-  margin-right: 10px;
-  filter: invert(1);
-}
+.mode-icon {
+  color: white;
+  font-size: 30px;
+  width: 30px;
+} 
+
 .search-button {
   display: flex;
   justify-content: center;
@@ -61,6 +64,10 @@ header {
   color: white;
   font-size: 15px;
   font-weight: bold;
+}
+.mode-icon:hover {
+  color: #355cff;
+  transition: filter 0.2s;
 }
 
 /* ------logo------ */
@@ -93,10 +100,9 @@ header {
   gap: 20px;
 }
 .login-icon {
-  width: 25px; 
-  height: 25px;
-  margin-right: 10px;
-  filter: invert(1);
+  color: white;
+  font-size: 20px;
+  width: 30px;
 }
 .login-button{
   display: flex;
@@ -116,6 +122,7 @@ header {
   padding: 10px;
   width: 150px;
   border-radius: 8px;
+  border: none;
   background-color: white;
   cursor: pointer;
   color: black;
@@ -127,14 +134,17 @@ header {
   color: white;
   transition: background 0.2s, color 0.2s;
 }
-.login-button:hover  {
+.login-button:hover {
   background: transparent;
   color: white;
   transition:  0.2s, color 0.2s;
 } 
-.login-button:hover .login-icon {
-  filter: brightness(0) saturate(100%) invert(32%) sepia(97%) saturate(7476%) hue-rotate(220deg) brightness(99%) contrast(101%);
+.login-button:hover .login-icon{
+  color: #355cff;
   transition: filter 0.2s;
+}
+.login-button:hover {
+  color: #355cff;
 }
 
 /* =============bar de séparation entre les éléments du header============== */
@@ -183,4 +193,49 @@ header {
 .nav-link{
   text-decoration: none;
   color: white;
+  position: relative;
+  transition: color 0.2s;
 }
+.nav-link::after{
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  width: 0;
+  height: 3px;
+  background: #355cff;
+  border-radius: 2px;
+  transform: translateX(-50%);
+  transition: width 0.5s;
+}
+
+.nav-link:hover {
+  transition: color 0.2s;
+}
+.nav-link:hover::after {
+  width: 100%;
+  transition: width 0.2s;
+}
+
+                                        /* ==============main style============= */
+
+.main-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  pointer-events: none;
+}                                        
+.main-img{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vw;
+  width: 100vw;
+  object-fit: cover;
+  z-index: -1;
+}                                        
