@@ -34,7 +34,7 @@
           <button class="login-button">
             <i class="fa-regular fa-circle-user login-icon"></i>Connexion
           </button>
-          <button class="register-button">Inscription</button>
+          <button class="register-button">a.register-link</button>
         </div>
       </div>
       <span class="header-separator"></span>
