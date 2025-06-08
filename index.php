@@ -34,7 +34,6 @@
           <button class="login-button">
             <i class="fa-regular fa-circle-user login-icon"></i>Connexion
           </button>
-          <button class="register-button">Inscription</button>
         </div>
       </div>
       <span class="header-separator"></span>
@@ -53,8 +52,7 @@
       <img src="./assets/img/vue-du-monument-mondial-pour-celebrer-la-journee-du-patrimoine-mondial.jpg" alt="" class="main-img">
       <div class="main-overlay"></div>
     </main>
-
-     <!-- Website font  -->
+    
         <footer class="site-footer">
         <div class="footer-container">
             <!-- Section À propos -->
@@ -118,5 +116,6 @@
           
     </footer>
     
+
   </body>
 </html>
