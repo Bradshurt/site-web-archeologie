@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Website font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>ArcheoIT_Project</title>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="option-contrainer">
+        <div class="mode-toggle">
+          <button class="button-class" id="toggle-button">
+            <i class="fa-solid fa-moon mode-icon" id="mode-toggle"></i>
+          </button>
+          <button class="search-button">
+            <i
+              class="fa-solid fa-magnifying-glass mode-icon"
+              id="mode-icon"
+            ></i>
+          </button>
+        </div>
+        <div class="contrainer-logo">
+          <h1 class="logo-title"><a href="#">ARCHÉO–iT</a></h1>
+          <p class="logo-text">To be completed</p>
+        </div>
+        <div class="authentification">
+          <button class="login-button">
+            <i class="fa-regular fa-circle-user login-icon"></i>Connexion
+          </button>
+          <button class="register-button">Inscription</button>
+        </div>
+      </div>
+      <span class="header-separator"></span>
+      <div class="nav-contrainer">
+        <nav class="nav-bar">
+          <ul class="position">
+            <li class="nav-list"><a class="nav-link" href="#">Accueil</a></li>
+            <li class="nav-list"><a class="nav-link" href="#">Chantiers</a></li>
+            <li class="nav-list"><a class="nav-link" href="#">contact</a></li>
+            <li class="nav-list"><a class="nav-link" href="#">Market</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="principal-container">
+      <img
+        src="./assets/img/vue-du-monument-mondial-pour-celebrer-la-journee-du-patrimoine-mondial.jpg"
+        alt=""
+        class="main-img"
+      />
+      <div class="main-overlay"></div>
+      <!-- Modale de connexion -->
+      <!-- <div class="modal hidden" id="login-modal">
+        <div class="modal-content">
+          <i class="fa-solid fa-xmark close-modal"></i>
+          <h2 class="modal-title">Connexion</h2>
+          <form class="content-form" action="#" method="post">
+            <label for="username">Nom d'utilisateur:</label>
+            <input
+              class="input-username"
+              type="text"
+              id="username"
+              name="username"
+              required
+            />
+            <label for="password">Mot de passe:</label>
+            <input
+              class="input-pwd"
+              type="password"
+              id="password"
+              name="password"
+              required
+            />
+            <a href="#" class="forgot-pwd">Mot de passe oublié ?</a>
+            <button class="modal-login" type="submit">Se connecter</button>
+          </form>
+        </div>
+      </div> -->
+      <!-- Modale Inscription -->
+      <div class="modal-first hidden" id="register-modal">
+        <div class="modal-content modal-row">
+          <i class="fa-solid fa-xmark close-modal"></i>
+          <!-- compartiment de gauche -->
+          <div class="modal-side-left modal-side-img">
+            <div class="modal-img-bg">
+              <div class="modal-img-overlay">
+                <h2 class="modal-img-title">Bienvenue !</h2>
+                <p class="modal-img-text">
+                  Rejoignez la communauté Archéo–iT pour découvrir toutes nos
+                  actualités.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- compartiment droit -->
+          <div class="modal-side-right modal-side-form">
+            <h2 class="modal-title">Inscription</h2>
+            <form class="content-form-right" action="#" method="post">
+              <label for="register-firstname">Prénom :</label>
+              <input
+                class="input-firstname"
+                type="text"
+                id="register-firstname"
+                name="firstname"
+                placeholder="Prénom"
+                required
+              />
+              <label for="register-lastname">Nom :</label>
+              <input
+                class="input-lastname"
+                type="text"
+                id="register-lastname"
+                name="lastname"
+                placeholder="Nom"
+                required
+              />
+              <label for="username">Nom d'utilisateur:</label>
+              <input
+                class="input-username"
+                type="text"
+                id="register-username"
+                name="register-username"
+                placeholder="Nom d'utilisateur"
+                required
+              />
+              <label for="email">Email:</label>
+              <input
+                class="input-email"
+                type="email"
+                placeholder="Email"
+                required
+              />
+              <label for="password">Type de mot de passe:</label>
+              <div class="pwd-type-choice">
+                <label>
+                  <input type="radio" name="password-type" value="alpha" checked />
+                  Alphabétique seulement
+                </label>
+                <label>
+                  <input type="radio" name="password-type" value="alphanume" />
+                  Alphanumérique et numérique
+                </label>
+                <label>
+                  <input type="radio" name="password-type" value="complex" />
+                  Alphabétique, numérique et caractères spéciaux
+                </label>
+                <input
+                class="input-pwd"
+                type="password"
+                id="register-password"
+                name="register-password"
+                placeholder="Mot de passe"
+                required
+                />
+              </div>
+              <button class="modal-register" type="button" id="generate-password">Générer un mot de passe</button>
+              <button class="modal-register" type="submit">S'inscrire</button>
+            </form>
+            <p class="register-connect">
+              Déjà inscrit ?
+              <a class="alredy-listed" href="#" id="show-login">Se connecter</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
