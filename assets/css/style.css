@@ -220,14 +220,6 @@ header {
 
                                         /* ==============main style============= */
 
-
-/* =================Principal main style================= */
-
-/* =================main content style================= */
-.principal-container{
-  position: relative;
-}
-
 /* =================Principal main style================= */
 
 /* =================main content style================= */
@@ -470,7 +462,6 @@ header {
   text-decoration: none;
   font-size: 0.9rem;
 }
-}  
 
 
 /* ==============footer style============= */
