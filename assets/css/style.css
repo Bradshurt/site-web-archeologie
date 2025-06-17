@@ -256,8 +256,8 @@ header {
   background: rgba(0,0,0,0.5);
   z-index: 100;
 }
-.modal .hidden {
-  display: none;
+.hidden {
+  display: none !important;
 }
 .modal-content {
   display: flex;
@@ -306,6 +306,7 @@ header {
   border: 1px solid #000;
   font-size: 1rem;
   width: 100%;
+  gap: 1.25rem;
   box-sizing: border-box;
 }
 .modal-login {
@@ -345,9 +346,9 @@ header {
 }
 
 /* =================Modale inscription================= */
-.modal-first .hidden{
-  /* display: none; */
-}
+/* .modal-first .hidden{
+  display: none;
+} */
 .modal-first {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -360,24 +361,21 @@ header {
 .modal-row {
   display: flex;
   flex-direction: row;
-  width: 60%;
-  min-width: 600px;
-  min-height: 400px;
+  width: 70%;
+  height: 600px;
+  /* min-width: 500px;
+  min-height: 300px; */
   border-radius: 12px;
   overflow: hidden;
-  max-height: 90vh;
-  overflow-y: auto;
 }
-.modal-side-left, .modal-side-right {
-  width: 50%;
-}
+
 /* =================Modale side left================= */
 .modal-side-left{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 50%;
+  width: 70%;
   gap: 1rem;
   position: relative;
   background: linear-gradient(rgba(0,0,0,0.5)),
@@ -419,11 +417,13 @@ header {
   align-items: center;
   flex-direction: column;
   gap: 1rem;
+  width: 30%;
 }
 .content-form-right {
   display: flex;
   width: 100%;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
   gap: 1rem;
 }
@@ -446,11 +446,36 @@ header {
   background: #2236a8;
   color: white;
 }
-.pwd-type-choice {
+.name-user {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+}
+.pwd-type-option {
+  display: flex;
+  flex-direction: row;
   gap: 0.3rem;
   margin-bottom: 1rem;
+}
+.input-select {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #000;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.modal-pwd-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #355cff;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
 }
 .register-connect {
   width: 100%;
@@ -462,12 +487,56 @@ header {
   text-decoration: none;
   font-size: 0.9rem;
 }
+/* =================Main Content================= */
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+.breaking-news {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.first-news{
+  display: flex;
+  flex-direction: column;
+}
+.p-title-news{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+}
+.disposition{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.card{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80px;
+  height: 90px;
+}
+.img-card{
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
 
 
-/* ==============footer style============= */
+                                        /* ==============Footer style============= */
+
     .site-footer {
-        background-color: #2c3e50;
-        color: #ecf0f1;
+        background-color: #000;
+        color: white;
         padding: 40px 0 0;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         line-height: 1.6;
@@ -490,7 +559,7 @@ header {
     }
     
     .footer-section h3 {
-        color: #f39c12;
+        color: #355cff;
         margin-bottom: 20px;
         font-size: 1.2rem;
         position: relative;
@@ -504,7 +573,7 @@ header {
         bottom: 0;
         width: 50px;
         height: 2px;
-        background-color: #f39c12;
+        background-color: #355cff;
     }
     
     .footer-logo img {
@@ -525,13 +594,13 @@ header {
     }
     
     .footer-links a:hover, .contact-info a:hover, .legal-links a:hover {
-        color: #f39c12;
+        color: #355cff;
     }
     
     /* Icônes de contact */
     .contact-info i {
         margin-right: 10px;
-        color: #f39c12;
+        color: #355cff;
         width: 20px;
         text-align: center;
     }
@@ -556,7 +625,7 @@ header {
     }
     
     .social-links a:hover {
-        background-color: #f39c12;
+        background-color: #355cff;
         transform: translateY(-3px);
     }
     
@@ -575,7 +644,7 @@ header {
     
     .newsletter-form button {
         padding: 10px 15px;
-        background-color: #f39c12;
+        background-color: #355cff;
         color: white;
         border: none;
         border-radius: 0 4px 4px 0;
@@ -584,7 +653,7 @@ header {
     }
     
     .newsletter-form button:hover {
-        background-color: #e67e22;
+        background-color: #2236a8;
     }
     
     /* Footer bottom */

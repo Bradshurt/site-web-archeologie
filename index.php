@@ -32,11 +32,8 @@
           </button>
           <button class="search-button">
             <i
-             
               class="fa-solid fa-magnifying-glass mode-icon"
-             
               id="mode-icon"
-            
             ></i>
           </button>
         </div>
@@ -76,7 +73,7 @@
       />
       <div class="main-overlay"></div>
       <!-- Modale de connexion -->
-      <!-- <div class="modal hidden" id="login-modal">
+      <div class="modal hidden" id="login-modal">
         <div class="modal-content">
           <i class="fa-solid fa-xmark close-modal"></i>
           <h2 class="modal-title">Connexion</h2>
@@ -101,7 +98,7 @@
             <button class="modal-login" type="submit">Se connecter</button>
           </form>
         </div>
-      </div> -->
+      </div>
       <!-- Modale Inscription -->
       <div class="modal-first hidden" id="register-modal">
         <div class="modal-content modal-row">
@@ -122,25 +119,28 @@
           <div class="modal-side-right modal-side-form">
             <h2 class="modal-title">Inscription</h2>
             <form class="content-form-right" action="#" method="post">
-              <label for="register-firstname">Prénom :</label>
-              <input
-                class="input-firstname"
-                type="text"
-                id="register-firstname"
-                name="firstname"
-                placeholder="Prénom"
-                required
-              />
-              <label for="register-lastname">Nom :</label>
-              <input
-                class="input-lastname"
-                type="text"
-                id="register-lastname"
-                name="lastname"
-                placeholder="Nom"
-                required
-              />
-              <label for="username">Nom d'utilisateur:</label>
+              <div class="name-user">
+                <div class="firstname-user">
+                  <input
+                    class="input-firstname"
+                    type="text"
+                    id="register-firstname"
+                    name="firstname"
+                    placeholder="Prénom"
+                    required
+                  />
+                </div>
+                <div class="lastname-user">
+                  <input
+                    class="input-lastname"
+                    type="text"
+                    id="register-lastname"
+                    name="lastname"
+                    placeholder="Nom"
+                    required
+                  />
+                </div>
+              </div>
               <input
                 class="input-username"
                 type="text"
@@ -149,37 +149,48 @@
                 placeholder="Nom d'utilisateur"
                 required
               />
-              <label for="email">Email:</label>
               <input
                 class="input-email"
                 type="email"
                 placeholder="Email"
                 required
               />
-              <label for="password">Type de mot de passe:</label>
-              <div class="pwd-type-choice">
-                <label>
-                  <input type="radio" name="password-type" value="alpha" checked />
-                  Alphabétique seulement
-                </label>
-                <label>
-                  <input type="radio" name="password-type" value="alphanume" />
-                  Alphanumérique et numérique
-                </label>
-                <label>
-                  <input type="radio" name="password-type" value="complex" />
-                  Alphabétique, numérique et caractères spéciaux
-                </label>
-                <input
-                class="input-pwd"
-                type="password"
-                id="register-password"
-                name="register-password"
-                placeholder="Mot de passe"
-                required
-                />
+              <label for="password">Mot de passe:</label>
+              <div class="pwd-type-option">
+                <div class="row-pwd">
+                  <select
+                    id="password-type"
+                    name="password-type"
+                    class="input-select"
+                  >
+                    <option value="" disabled selected>
+                      Type de mot de passe
+                    </option>
+                    <option value="alpha">Alphabétique seulement</option>
+                    <option value="alphanum">Alphanumérique</option>
+                    <option value="complex">
+                      Alphanumérique + caractères spéciaux
+                    </option>
+                  </select>
+                  <input
+                    class="input-pwd"
+                    type="password"
+                    id="register-password"
+                    name="register-password"
+                    placeholder="Mot de passe"
+                    required
+                  />
+                </div>
+                <button
+                  class="modal-pwd-btn"
+                  onclick="generatePassword()"
+                  type="button"
+                  id="generate-password"
+                >
+                  Générer un mot de passe
+                </button>
               </div>
-              <button class="modal-register" type="button" id="generate-password">Générer un mot de passe</button>
+
               <button class="modal-register" type="submit">S'inscrire</button>
             </form>
             <p class="register-connect">
@@ -189,8 +200,58 @@
           </div>
         </div>
       </div>
+      <div class="main-content">
+        <div class="breaking-news">
+          <div class="first-news">
+            <div class="p-title-news">
+              <h1 class="main-title">Bienvenue sur Archéo-IT</h1>
+              <p class="main-description">
+                Découvrez les dernières avancées en archéologie et technologies
+                de l'information. Explorez nos chantiers de fouilles, participez
+                à nos événements et rejoignez notre communauté passionnée.
+              </p>
+            </div>
+            <div class="carousel" onmousemove="handleMouseMove(event)">
+              <div class="carousel-inner disposition">
+                <div class="card active">
+                  <img src="/assets/img/img-card.png" alt="" class="img-card" />
+                  <h3>Carte 1</h3>
+                  <p>Description de la carte 1.</p>
+                </div>
+                <div class="card">
+                  <img src="/assets/img/img-card.png" alt="" class="img-card" />
+                  <h3>Carte 2</h3>
+                  <p>Description de la carte 2.</p>
+                </div>
+                <div class="card">
+                  <img src="/assets/img/img-card.png" alt="" class="img-card" />
+                  <h3>Carte 3</h3>
+                  <p>Description de la carte 3.</p>
+                </div>
+                <div class="card">
+                  <img src="/assets/img/img-card.png" alt="" class="img-card" />
+                  <h3>Carte 4</h3>
+                  <p>Description de la carte 4.</p>
+                </div>
+                <div class="card">
+                  <img src="/assets/img/img-card.png" alt="" class="img-card" />
+                  <h3>Carte 5</h3>
+                  <p>Description de la carte 5.</p>
+                </div>
+                <div class="card">
+                  <img src="/assets/img/img-card.png" alt="" class="img-card" />
+                  <h3>Carte 6</h3>
+                  <p>Description de la carte 6.</p>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+              </div>
+            </div>
+          </div>
+          <div class="second-news"></div>
+        </div>
+      </div>
     </main>
-
 
     <footer class="site-footer">
       <div class="footer-container">
@@ -202,7 +263,7 @@
             technologies de l'information.
           </p>
           <div class="footer-logo">
-            <img src="images/logo.png" alt="Logo Archéo-IT" />
+            <h1 class="logo-title"><a href="#">ARCHÉO–iT</a></h1>
           </div>
         </div>
 
@@ -259,5 +320,6 @@
         </div>
       </div>
     </footer>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
