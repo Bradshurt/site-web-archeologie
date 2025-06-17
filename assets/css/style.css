@@ -1,22 +1,22 @@
-                                    /* ==============general page style============= */
+/* ==============general page style============= */
 body {
-    font-family: "Roboto", sans-serif;
-    top: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+  font-family: "Roboto", sans-serif;
+  top: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
-                                        /* ==============header style============= */
+/* ==============header style============= */
 
 /* =================general style of header elements================= */
 header {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    position: relative;
-    z-index: 10;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  position: relative;
+  z-index: 10;
 }
 /* =================option contrainer style================= */
 .option-contrainer {
@@ -32,14 +32,14 @@ header {
 /* ------dark/light mode------ */
 
 .mode-toggle {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  margin: 20px;
 }
-.button-class{
+.button-class {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,7 +52,7 @@ header {
   color: white;
   font-size: 30px;
   width: 30px;
-} 
+}
 
 .search-button {
   display: flex;
@@ -83,12 +83,11 @@ header {
   text-decoration: none;
   color: white;
 }
-.logo-text{
+.logo-text {
   font-size: 10px;
   font-style: italic;
   font-weight: bold;
   margin-top: -10px;
-  
 }
 
 /* ------authentification------ */
@@ -104,7 +103,7 @@ header {
   font-size: 20px;
   width: 30px;
 }
-.login-button{
+.login-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,7 +114,7 @@ header {
   font-size: 15px;
   font-weight: bold;
 }
-.register-button{
+.register-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,9 +136,9 @@ header {
 .login-button:hover {
   background: transparent;
   color: white;
-  transition:  0.2s, color 0.2s;
-} 
-.login-button:hover .login-icon{
+  transition: 0.2s, color 0.2s;
+}
+.login-button:hover .login-icon {
   color: #355cff;
   transition: filter 0.2s;
 }
@@ -153,7 +152,7 @@ header {
   display: block;
   width: 80%;
   height: 1px;
-  background: white; 
+  background: white;
   margin-top: 10px;
   margin-bottom: 50px;
   margin-left: auto;
@@ -178,25 +177,25 @@ header {
   margin-top: -25px;
   position: absolute;
 }
-.position{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    list-style-type: none;
+.position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  list-style-type: none;
 }
-.nav-list{
-    gap: 20px;
-    padding-right: 50px;
-    padding-left: 50px;
+.nav-list {
+  gap: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
-.nav-link{
+.nav-link {
   text-decoration: none;
   color: white;
   position: relative;
   transition: color 0.2s;
 }
-.nav-link::after{
+.nav-link::after {
   content: "";
   display: block;
   position: absolute;
@@ -218,42 +217,46 @@ header {
   transition: width 0.2s;
 }
 
-                                        /* ==============main style============= */
+/* ==============main style============= */
 
 /* =================Principal main style================= */
 
 /* =================main content style================= */
-.principal-container{
+.principal-container {
   position: relative;
+  z-index: auto;
 }
-.main-overlay{
+.main-overlay {
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  z-index: -1;
   pointer-events: none;
-}                                        
-.main-img{
+}
+.main-img {
   position: fixed;
   top: 0;
   left: 0;
   height: 100vw;
   width: 100vw;
   object-fit: cover;
-  z-index: -1;
-}           
+  z-index: -2;
+}
 
 /* =================Modale connexion================= */
 .modal {
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 100;
 }
 .hidden {
@@ -267,7 +270,7 @@ header {
   padding: 2rem 2.5rem;
   border-radius: 12px;
   min-width: 320px;
-  box-shadow: 0 4px 32px rgba(0,0,0,1);
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 1);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -300,7 +303,7 @@ header {
 .input-firstname,
 .input-lastname,
 .input-email,
-.input-pwd{
+.input-pwd {
   padding: 0.5rem;
   border-radius: 8px;
   border: 1px solid #000;
@@ -337,7 +340,8 @@ header {
   cursor: pointer;
   transition: background-color 0.2s;
 }
-.content-form, .modal-login {
+.content-form,
+.modal-login {
   justify-content: center;
 }
 .modal-login[type="submit"]:hover {
@@ -351,11 +355,14 @@ header {
 } */
 .modal-first {
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 100;
 }
 .modal-row {
@@ -370,7 +377,7 @@ header {
 }
 
 /* =================Modale side left================= */
-.modal-side-left{
+.modal-side-left {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -378,15 +385,18 @@ header {
   width: 70%;
   gap: 1rem;
   position: relative;
-  background: linear-gradient(rgba(0,0,0,0.5)),
-              url('../img/register.jpg') center center / cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5)),
+    url("../img/register.jpg") center center / cover no-repeat;
   min-width: 0;
   min-height: 400px;
   flex: 1 1 0;
 }
 .modal-img-overlay {
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -394,7 +404,7 @@ header {
   color: #fff;
   padding: 2rem;
   text-align: center;
-  background: rgba(0,0,0,0.4); 
+  background: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 
@@ -411,7 +421,7 @@ header {
   text-shadow: 0 2px 8px #000;
 }
 /* =================Modale side right================= */
-.modal-side-right{
+.modal-side-right {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -500,197 +510,208 @@ header {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-.first-news{
+.first-news {
   display: flex;
   flex-direction: column;
 }
-.p-title-news{
+.p-title-news {
   display: flex;
   flex-direction: column;
   width: 200px;
   height: 200px;
 }
-.disposition{
+.disposition {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
-.card{
+.card {
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: 80px;
   height: 90px;
 }
-.img-card{
+.img-card {
   width: 80px;
   height: 60px;
   object-fit: cover;
   border-radius: 8px;
 }
 
+.carousel,
+.carousel-inner,
+.card{
+  position: static;
+  z-index: auto;
+}
 
-                                        /* ==============Footer style============= */
+/* ==============Footer style============= */
 
-    .site-footer {
-        background-color: #000;
-        color: white;
-        padding: 40px 0 0;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.6;
-    }
-    
-    .footer-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    
-    .footer-section {
-        flex: 1;
-        min-width: 250px;
-        margin-bottom: 30px;
-        padding: 0 15px;
-    }
-    
-    .footer-section h3 {
-        color: #355cff;
-        margin-bottom: 20px;
-        font-size: 1.2rem;
-        position: relative;
-        padding-bottom: 10px;
-    }
-    
-    .footer-section h3::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 50px;
-        height: 2px;
-        background-color: #355cff;
-    }
-    
-    .footer-logo img {
-        max-width: 150px;
-        margin-top: 15px;
-    }
-    
-    /* Style des liens */
-    .footer-links li, .contact-info li {
-        margin-bottom: 10px;
-        list-style: none;
-    }
-    
-    .footer-links a, .contact-info a, .legal-links a {
-        color: #bdc3c7;
-        text-decoration: none;
-        transition: color 0.3s;
-    }
-    
-    .footer-links a:hover, .contact-info a:hover, .legal-links a:hover {
-        color: #355cff;
-    }
-    
-    /* Icônes de contact */
-    .contact-info i {
-        margin-right: 10px;
-        color: #355cff;
-        width: 20px;
-        text-align: center;
-    }
-    
-    /*Réseaux sociaux */
-    .social-links {
-        display: flex;
-        gap: 15px;
-        margin-bottom: 20px;
-    }
-    
-    .social-links a {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 35px;
-        height: 35px;
-        background-color: #34495e;
-        color: #ecf0f1;
-        border-radius: 50%;
-        transition: all 0.3s;
-    }
-    
-    .social-links a:hover {
-        background-color: #355cff;
-        transform: translateY(-3px);
-    }
-    
-    /* Newsletter */
-    .newsletter-form {
-        display: flex;
-        margin-top: 15px;
-    }
-    
-    .newsletter-form input {
-        flex: 1;
-        padding: 10px;
-        border: none;
-        border-radius: 4px 0 0 4px;
-    }
-    
-    .newsletter-form button {
-        padding: 10px 15px;
-        background-color: #355cff;
-        color: white;
-        border: none;
-        border-radius: 0 4px 4px 0;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
-    
-    .newsletter-form button:hover {
-        background-color: #2236a8;
-    }
-    
-    /* Footer bottom */
-    .footer-bottom {
-        background-color: #1a252f;
-        padding: 20px 0;
-        text-align: center;
-    }
-    
-    .footer-bottom p {
-        margin-bottom: 10px;
-        color: #bdc3c7;
-        font-size: 0.9rem;
-    }
-    
-    .legal-links {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-    }
-    
-    .legal-links a {
-        font-size: 0.8rem;
-    }
-    
-    /* Responsive */
-    @media (max-width: 768px) {
-        .footer-section {
-            flex: 100%;
-        }
-        
-        .footer-container {
-            flex-direction: column;
-        }
-        
-        .legal-links {
-            flex-direction: column;
-            gap: 5px;
-        }
-    }
+.site-footer {
+  background-color: #000;
+  color: white;
+  padding: 40px 0 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+
+.footer-section h3 {
+  color: #355cff;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-section h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #355cff;
+}
+
+.footer-logo img {
+  max-width: 150px;
+  margin-top: 15px;
+}
+
+/* Style des liens */
+.footer-links li,
+.contact-info li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.footer-links a,
+.contact-info a,
+.legal-links a {
+  color: #bdc3c7;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.contact-info a:hover,
+.legal-links a:hover {
+  color: #355cff;
+}
+
+/* Icônes de contact */
+.contact-info i {
+  margin-right: 10px;
+  color: #355cff;
+  width: 20px;
+  text-align: center;
+}
+
+/*Réseaux sociaux */
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background-color: #34495e;
+  color: #ecf0f1;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.social-links a:hover {
+  background-color: #355cff;
+  transform: translateY(-3px);
+}
+
+/* Newsletter */
+.newsletter-form {
+  display: flex;
+  margin-top: 15px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.newsletter-form button {
+  padding: 10px 15px;
+  background-color: #355cff;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #2236a8;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  background-color: #1a252f;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin-bottom: 10px;
+  color: #bdc3c7;
+  font-size: 0.9rem;
+}
+
+.legal-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.legal-links a {
+  font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-section {
+    flex: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .legal-links {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
