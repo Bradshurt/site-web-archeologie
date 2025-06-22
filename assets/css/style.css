@@ -702,12 +702,15 @@ header {
 
 .hero-title {
   font-size: 48px;
+  font-weight: bold;
   margin-bottom: 20px;
+  color: #355cff;
 }
 
 .hero-description {
   font-size: 18px;
   line-height: 1.6;
+  color: #ddd;
 }
 .trending-section {
   padding: 40px 90px 0;

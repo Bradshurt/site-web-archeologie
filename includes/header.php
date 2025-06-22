@@ -46,7 +46,6 @@ if (session_status() === PHP_SESSION_NONE) {
         </li>
         <li class="nav-list"><a class="nav-link" href="../pages/chantiers.php">Chantiers</a></li>
         <li class="nav-list"><a class="nav-link" href="../pages/contact.php">contact</a></li>
-        <li class="nav-list"><a class="nav-link" href="#">Market</a></li>
         <div class="nav-auth">
           <?php if (isset($_SESSION['user_id'])): ?>
           <div class="auth-mobile">

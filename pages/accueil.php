@@ -46,18 +46,29 @@ if (!isset($_SESSION['user_id'])) {
 
             <div class="trending-cards">
               <div class="trending-card">
-                <img src="/assets/img/register.jpg" alt="" />
-                <h3>Scelerisque Varius Morbi Enim Nunc Faucibus</h3>
+                <img
+                  src="https://www.flyingeye.fr/wp-content/uploads/2021/07/dji-Zenmuse-L1-LIDAR.jpg"
+                  alt="Scanner LiDAR en action"
+                />
+                <h3>
+                  Le LiDAR révolutionne la détection de sites archéologiques
+                </h3>
               </div>
 
               <div class="trending-card">
-                <img src="/assets/img/register.jpg" alt="" />
-                <h3>Bulvinar Neque Laoreet Suspendisse Interdum</h3>
+                <img
+                  src="https://static.nationalgeographic.fr/files/styles/image_3200/public/archaide.webp?w=760&h=573"
+                  alt="IA analysant des artefacts"
+                />
+                <h3>L'IA déchiffre des textes antiques endommagés</h3>
               </div>
 
               <div class="trending-card">
-                <img src="/assets/img/register.jpg" alt="" />
-                <h3>Accumsan Tortor Posuere Acut Consequat Semper</h3>
+                <img
+                  src="https://i.all3dp.com/wp-content/uploads/2022/09/18163135/Epic-Games-Capturing-Reality-scaled.jpg"
+                  alt="Reconstruction 3D d'un temple"
+                />
+                <h3>Photogrammétrie 3D : reconstitutions millimétriques</h3>
               </div>
             </div>
           </section>
@@ -157,41 +168,40 @@ if (!isset($_SESSION['user_id'])) {
         <!-- LEFT COLUMN (World Category + Articles) -->
         <div class="breaking-news">
           <span class="badge green">World</span>
-          <h1>Risus Pretium Quam Vulputate Dignissim Suspendisse</h1>
-          <p class="date">Nov 16, 2023</p>
+          <h1>Découverte d'une cité maya intacte grâce au LiDAR</h1>
+          <p class="date">Juin 15, 2025</p>
           <p class="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Tincidunt praesent semper feugiat nibh. Nullam non nisi est sit amet
-            facilisis magna. Pellentesque pulvinar pellentesque habitant…
+            Une équipe internationale a identifié une cité maya complète sous la forêt tropicale guatémaltèque. 
+            Le scan laser a révélé pyramides, terrains de jeu de balle et un système hydraulique sophistiqué. 
+            Ce site datant du Classique maya (250-900 ap. J.-C.) pourrait réécrire l'histoire de la région...
           </p>
 
           <div class="more-world-category">
-            <h3>More from World Category</h3>
+            <h3>Plus d'actualités archéologiques</h3>
             <div class="article-grid">
               <div class="article-item">
-                <h4>Dolor Purus Non Enim Praesent Elementum Facilisis</h4>
-                <p class="date">Nov 16, 2023</p>
+                <h4>Nouvelle interprétation des peintures de Lascaux</h4>
+                <p class="date">Juin 14, 2025</p>
               </div>
               <div class="article-item">
-                <h4>Dignissim Suspendisse Inest Ante Inibh Mauris</h4>
-                <p class="date">Nov 16, 2023</p>
+                <h4>Découverte d'un navire viking en parfait état</h4>
+                <p class="date">Juin 12, 2025</p>
               </div>
               <div class="article-item">
-                <h4>Scelerisque Eultrices Vitae Auctor Pellentesque</h4>
-                <p class="date">Nov 16, 2023</p>
+                <h4>L'ADN ancien révèle des migrations inconnues</h4>
+                <p class="date">Juin 10, 2025</p>
               </div>
               <div class="article-item">
-                <h4>Lacus Sedturpis Tincidunt Odaliquet Risus</h4>
-                <p class="date">Nov 14, 2023</p>
+                <h4>Un trésor romain trouvé en Bretagne</h4>
+                <p class="date">Juin 8, 2025</p>
               </div>
               <div class="article-item">
-                <h4>Phasellus Vestibulum Lorem Sed Risus Ultricies Natoque</h4>
-                <p class="date">Nov 14, 2023</p>
+                <h4>Déchiffrement partiel du disque de Phaistos</h4>
+                <p class="date">Juin 5, 2025</p>
               </div>
               <div class="article-item">
-                <h4>Pellentesque Eliteget Bravida Cumsociis Natoque</h4>
-                <p class="date">Nov 10, 2023</p>
+                <h4>Technologie 3D pour restaurer Palmyre</h4>
+                <p class="date">Juin 2, 2025</p>
               </div>
             </div>
           </div>
@@ -199,31 +209,31 @@ if (!isset($_SESSION['user_id'])) {
 
         <!-- RIGHT COLUMN (Hot Videos) -->
         <div class="hot-videos">
-          <h3>Hot Videos</h3>
+          <h3>Vidéos populaires</h3>
           <div class="video-item">
             <div class="video-frame">
               <iframe
-                src="https://www.youtube.com/embed/VIDEO_ID_1"
-                title="YouTube video"
+                src="https://www.youtube.com/embed/7MFKy7DJsCY"
+                title="Découverte de la tombe de Toutânkhamon"
                 frameborder="0"
                 allowfullscreen
               ></iframe>
             </div>
-            <h4>Pellentesque Pulvinar Pellentesque Habitant Morbi</h4>
-            <p class="date">Nov 17, 2023</p>
+            <h4>Les secrets de la tombe de Toutânkhamon</h4>
+            <p class="date">Mai 28, 2025</p>
           </div>
 
           <div class="video-item">
             <div class="video-frame">
               <iframe
-                src="https://www.youtube.com/embed/VIDEO_ID_2"
-                title="YouTube video"
+                src="https://www.youtube.com/embed/7YGLTXE4mQ0"
+                title="Découverte archéologique"
                 frameborder="0"
                 allowfullscreen
               ></iframe>
             </div>
-            <h4>Dignissim Suspendisse Inest Ante Inibh Mauris</h4>
-            <p class="date">Nov 16, 2023</p>
+            <h4>Les 10 découvertes incroyable de l'archéologie</h4>
+            <p class="date">Dec, 2024</p>
           </div>
         </div>
       </div>
