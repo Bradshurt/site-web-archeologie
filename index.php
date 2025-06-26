@@ -17,21 +17,38 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $email = trim($_POST['email']);
         $mot_de_passe = password_hash(trim($_POST['register-password']), PASSWORD_DEFAULT);
 
-        $stmt = $pdo->prepare("INSERT INTO utilisateurs (prenom, nom, username,
-email, mot_de_passe) VALUES (?, ?, ?, ?, ?)"); try { $stmt->execute([$prenom,
-$nom, $username, $email, $mot_de_passe]); $_SESSION['user_id'] =
-$pdo->lastInsertId(); $_SESSION['username'] = $username; $_SESSION['role'] =
-'membre'; header("Location: pages/accueil.php"); exit(); } catch (PDOException
-$e) { $erreur_inscription = "Erreur : nom d'utilisateur ou email déjà utilisé.";
-} } // CONNEXION elseif (isset($_POST['username']) && isset($_POST['password']))
-{ $username = trim($_POST['username']); $password = trim($_POST['password']);
-$stmt = $pdo->prepare("SELECT * FROM utilisateurs WHERE username = ?");
-$stmt->execute([$username]); $user = $stmt->fetch(); if (!$user) {
-$erreur_connexion = "Nom d'utilisateur incorrect."; } elseif
-(!password_verify($password, $user['mot_de_passe'])) { $erreur_connexion = "Mot
-de passe incorrect."; } else { $_SESSION['user_id'] = $user['id'];
-$_SESSION['username'] = $user['username']; $_SESSION['role'] = $user['role'];
-header("Location: pages/accueil.php"); exit(); } } } ?>
+        $stmt = $pdo->prepare("INSERT INTO utilisateurs (prenom, nom, username,email, mot_de_passe) VALUES (?, ?, ?, ?, ?)"); 
+        try { $stmt->execute([$prenom,$nom, $username, $email, $mot_de_passe]); 
+          $_SESSION['user_id'] =$pdo->lastInsertId(); 
+          $_SESSION['username'] = $username; $_SESSION['role'] ='membre';
+          header("Location: pages/accueil.php"); 
+          exit(); 
+        } 
+      catch (PDOException$e) { $erreur_inscription = "Erreur : nom d'utilisateur ou email déjà utilisé.";} }
+      
+      // CONNEXION 
+      elseif (isset($_POST['username']) && isset($_POST['password'])) { 
+        $username = trim($_POST['username']); 
+        $password = trim($_POST['password']);
+        $stmt = $pdo->prepare("SELECT * FROM utilisateurs WHERE username = ?");
+        $stmt->execute([$username]); 
+        $user = $stmt->fetch(); 
+        if (!$user) {
+          $erreur_connexion = "Nom d'utilisateur incorrect."; 
+        } 
+        elseif(!password_verify($password, $user['mot_de_passe'])) { 
+          $erreur_connexion = "Mot de passe incorrect."; 
+        }
+        else { $_SESSION['user_id'] = $user['id'];
+          $_SESSION['username'] = $user['username']; 
+          $_SESSION['role'] = $user['role'];
+          header("Location: pages/accueil.php"); 
+          exit(); 
+        } 
+      }
+  } 
+  
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -215,12 +232,12 @@ header("Location: pages/accueil.php"); exit(); } } } ?>
         <div class="breaking-news">
           <h2>Breaking News</h2>
           <div class="main-article">
-            <img src="/assets/img/template.jpg" alt="Breaking" />
+            <img src="https://www.inrap.fr/sites/inrap.fr/files/thumbnails/image/christophe_fouquin_inrap_2505-inrap-auxerre-depliant_1_result.jpg" alt="Villa romaine à Auxerre" />
             <div class="breaking-overlay">
               <span class="badge">BREAKING</span>
-              <span class="category">CULTURE</span>
-              <h2>Ornare Arcu Duivivamus Arcu Felis Bibendum</h2>
-              <p class="date">Nov 14, 2023</p>
+              <span class="category">ARCHÉOLOGIE</span>
+              <h2>Une villa romaine géante découverte à Auxerre</h2>
+              <p class="date">Juin 2025</p>
             </div>
           </div>
         </div>
@@ -229,21 +246,22 @@ header("Location: pages/accueil.php"); exit(); } } } ?>
           <h2>Popular Now</h2>
           <div class="popular-grid">
             <div class="popular-card">
-              <img src="/assets/img/register.jpg" />
+              <img src="https://s3.hosteur.io/gazette-prod-public/gazetteWeb/662f4295514c09a4288b5117/articles/685962eadef071f3f286101d/files/1202578/ouilles-archologiques-par-lA-dun-site-du-e-avant-notre-re-au-e-haudebois-Ales-ues-de-cabanes-protohistoriques-et-de-constructions-antiques-comportant.webp" />
               <div class="badges">
-                <span class="badge black">TRAVEL</span>
-                <span class="badge black">WORLD</span>
+                <span class="badge black">PATRIMOINE</span>
+                <span class="badge black">OCCITANIE</span>
               </div>
-              <h4>Pellentesque Elit Bravida Cum Sociis Natoque</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+              <h4>Mosaïque romaine intacte retrouvée à Alès</h4>
+              <p>Une fresque polychrome d’époque romaine mise au jour lors de fouilles préventives.</p>
             </div>
             <div class="popular-card">
-              <img src="/assets/img/register.jpg" />
+              <img src="https://media.ouest-france.fr/v1/pictures/MjAyNTA2NjliMjg5MDI5ZWJlNjE5ZGNkYWEwMDVhZjAzNTlhNmU?width=1260&height=708&focuspoint=50%2C25&cropresize=1&client_id=bpeditorial&sign=7fce1011c6aa292c012db5f2d0cb5396d2f051bf6afda694d4f613adcc505e4d" />
               <div class="badges">
-                <span class="badge black">SCIENCE</span>
+                <span class="badge black">PRÉHISTOIRE</span>
+                <span class="badge black">BRETAGNE</span>
               </div>
-              <h4>Turpis Egestas Sed Tempus Urna Pharetra</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+              <h4>Chambre funéraire néolithique redécouverte à Groix</h4>
+              <p>Les fouilles de la Pointe des Chats révèlent une sépulture du Néolithique impressionnante.</p>
             </div>
           </div>
         </div>

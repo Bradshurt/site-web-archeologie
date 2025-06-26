@@ -78,49 +78,50 @@ if (!isset($_SESSION['user_id'])) {
           <h3 class="breaking-title">Breaking News</h3>
 
           <div class="breaking-item">
-            <img src="/assets/img/img-card.png" alt="" />
+            <img src="https://www.sciencesetavenir.fr/assets/inline-img/2025/06/04/w453-171429-christophe-fouquin-inrap-2505-inrap-auxerre-85-2.jpg" alt="Villa romaine à Auxerre" />
             <div class="breaking-text">
-              <h4>Carte 1</h4>
-              <p>NOV 18, 2023</p>
+              <h4>Villa gallo-romaine géante à Auxerre</h4>
+              <p>Juin 2025 — Découverte majeure dans l'Yonne.</p>
             </div>
           </div>
 
           <div class="breaking-item">
-            <img src="/assets/img/img-card.png" alt="" />
+            <img src="https://www.connaissancedesarts.com/wp-content/thumbnails/uploads/2021/09/sans-titre-2021-09-03t150656-798-tt-width-1200-height-900-fill-0-crop-1-bgcolor-ffffff.jpg" alt="Mosaïque à Alès" />
             <div class="breaking-text">
-              <h4>Carte 2</h4>
-              <p>NOV 17, 2023</p>
+              <h4>Fresque romaine intacte retrouvée à Alès</h4>
+              <p>Juin 2025 — Mosaïque polychrome exceptionnelle.</p>
             </div>
           </div>
 
           <div class="breaking-item">
-            <img src="../assets/img/img-card.png" alt="" />
+            <img src="https://media.ouest-france.fr/v1/pictures/MjAyMjAyYTdiYmVhZTcwYjZhYTU1OWM1ODI2YjkzNWE0M2QxMDc?width=1260&height=708&focuspoint=50%2C25&cropresize=1&client_id=bpeditorial&sign=fa713750339237ea1d57511ca79d1e27bf21141ea70eb73da40c7a5badf1483c" alt="Chambre néolithique Groix" />
             <div class="breaking-text">
-              <h4>Le Colisée ouvre ses portes gratuitement</h4>
-              <p>Rome célèbre le patrimoine à bras ouverts.</p>
+              <h4>Chambre funéraire néolithique à Groix</h4>
+              <p>Juin 2025 — Nouvelle fenêtre sur le passé breton.</p>
             </div>
           </div>
 
           <div class="breaking-item">
-            <img src="../assets/img/img-card.png" alt="" />
+            <img src="https://i.la-croix.com/836x/smart/2025/06/26/2122910-ensemble-de-pieces-provenant-de-la-collecte-rabut-.jpg" alt="Expo Âge du Bronze" />
             <div class="breaking-text">
-              <h4>Des visites nocturnes inédites à Angkor</h4>
-              <p>Une première pour les temples cambodgiens.</p>
+              <h4>Expo “Les Maîtres du Feu” à St-Germain</h4>
+              <p>Juin 2025 — Un voyage au cœur du Bronze.</p>
             </div>
           </div>
         </div>
+
       </div>
 
       <div class="news-section">
         <div class="breaking-news">
           <h2>Breaking News</h2>
           <div class="main-article">
-            <img src="/assets/img/template.jpg" alt="Breaking" />
+            <img src="https://www.inrap.fr/sites/inrap.fr/files/thumbnails/image/christophe_fouquin_inrap_2505-inrap-auxerre-depliant_1_result.jpg" alt="Villa romaine à Auxerre" />
             <div class="breaking-overlay">
               <span class="badge">BREAKING</span>
-              <span class="category">CULTURE</span>
-              <h2>Ornare Arcu Duivivamus Arcu Felis Bibendum</h2>
-              <p class="date">Nov 14, 2023</p>
+              <span class="category">ARCHÉOLOGIE</span>
+              <h2>Une villa romaine géante découverte à Auxerre</h2>
+              <p class="date">Juin 2025</p>
             </div>
           </div>
         </div>
@@ -129,41 +130,46 @@ if (!isset($_SESSION['user_id'])) {
           <h2>Popular Now</h2>
           <div class="popular-grid">
             <div class="popular-card">
-              <img src="/assets/img/register.jpg" />
+              <img src="https://s3.hosteur.io/gazette-prod-public/gazetteWeb/662f4295514c09a4288b5117/articles/685962eadef071f3f286101d/files/1202578/ouilles-archologiques-par-lA-dun-site-du-e-avant-notre-re-au-e-haudebois-Ales-ues-de-cabanes-protohistoriques-et-de-constructions-antiques-comportant.webp" />
               <div class="badges">
-                <span class="badge black">TRAVEL</span>
-                <span class="badge black">WORLD</span>
+                <span class="badge black">PATRIMOINE</span>
+                <span class="badge black">OCCITANIE</span>
               </div>
-              <h4>Pellentesque Elit Bravida Cum Sociis Natoque</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+              <h4>Mosaïque romaine intacte retrouvée à Alès</h4>
+              <p>Une fresque polychrome d’époque romaine mise au jour lors de fouilles préventives.</p>
             </div>
             <div class="popular-card">
-              <img src="/assets/img/register.jpg" />
+              <img src="https://media.ouest-france.fr/v1/pictures/MjAyNTA2NjliMjg5MDI5ZWJlNjE5ZGNkYWEwMDVhZjAzNTlhNmU?width=1260&height=708&focuspoint=50%2C25&cropresize=1&client_id=bpeditorial&sign=7fce1011c6aa292c012db5f2d0cb5396d2f051bf6afda694d4f613adcc505e4d" />
               <div class="badges">
-                <span class="badge black">SCIENCE</span>
+                <span class="badge black">PRÉHISTOIRE</span>
+                <span class="badge black">BRETAGNE</span>
               </div>
-              <h4>Turpis Egestas Sed Tempus Urna Pharetra</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+              <h4>Chambre funéraire néolithique redécouverte à Groix</h4>
+              <p>Les fouilles de la Pointe des Chats révèlent une sépulture du Néolithique impressionnante.</p>
             </div>
             <div class="popular-card">
-              <img src="/assets/img/register.jpg" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/F07_0017.Mz.JPG/1200px-F07_0017.Mz.JPG" />
               <div class="badges">
-                <span class="badge black">ECONOMY</span>
+                <span class="badge black">MÉDIÉVAL</span>
+                <span class="badge black">VENDÉE</span>
               </div>
-              <h4>Minulla Posuere Sollicitudin Aliquam Ultrices</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+              <h4>Abbaye de Maillezais : reconstitution 3D inédite</h4>
+              <p>Une nouvelle campagne numérique révèle les secrets architecturaux de cette abbaye médiévale.</p>
             </div>
             <div class="popular-card">
-              <img src="/assets/img/register.jpg" />
+              <img src="https://www.connaissancedesarts.com/wp-content/thumbnails/uploads/2025/06/cda-bronze-man-main1-tt-width-1200-height-630-fill-0-crop-1-bgcolor-ffffff.jpg" />
               <div class="badges">
-                <span class="badge black">ECONOMY</span>
+                <span class="badge black">EXPOSITION</span>
+                <span class="badge black">ÂGE DU BRONZE</span>
               </div>
-              <h4>Scelerisque Varius Morbi Enim Nunc Faucibus</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+              <h4>“Les Maîtres du Feu” au musée de St-Germain</h4>
+              <p>Une exposition exceptionnelle sur l’Âge du Bronze ouverte jusqu’en mars 2026.</p>
             </div>
           </div>
         </div>
       </div>
+
+
       <div class="news-section-2">
         <!-- LEFT COLUMN (World Category + Articles) -->
         <div class="breaking-news">

@@ -19,7 +19,6 @@
         <li><a href="index.html">Accueil</a></li>
         <li><a href="chantiers.html">Chantiers de fouilles</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="inscription.html">Inscription</a></li>
       </ul>
     </div>
 
